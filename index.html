@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./static/css/base.css" rel="stylesheet">
+    <link href="./static/css/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.font.im/css?family=Source+Serif+Pro%7CLato%7CInconsolata" rel="stylesheet"
+        type="text/css">
+    <title> ysyx分享会 </title>
+    <!-- browser favicon -->
+    <link rel="shortcut icon" href="./static/img/favicon.png">
+    <style>
+        .font-sans {
+            font-family: 'Lato', 'SimHei', 'STHeiti', 'SimHei', 'Serif';
+        }
+
+        .font-serif {
+            font-family: 'Source Serif Pro', 'Songti SC', 'SimSun', 'Serif', serif;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://jyywiki.cn/static/katex/katex.min.css">
+    <script defer src="https://jyywiki.cn/static/katex/katex.min.js"></script> -->
+    <link rel="stylesheet" href="./static/katex/katex.min.css">
+    <script defer src="./static/katex/katex.min.js"></script>
+    <!-- <script defer src="https://jyywiki.cn/static/katex/auto-render.min.js"
+        integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+        crossorigin="anonymous"></script> -->
+    <script defer src="./static/katex/auto-render.min.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                // customised options
+                // &#8226; auto-render specific keys, e.g.:
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },
+                    { left: '\\[', right: '\\]', display: true }
+                ],
+                // &#8226; rendering keys, e.g.:
+                throwOnError: false
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="./static/reveal/reveal.css">
+    <link rel="stylesheet" href="./static/reveal/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="./static/jyy/jyy.css">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <div class="reveal">
+        <div class="slides">
+            <section><section><div class="center middle"><div style="width:100%"><div><h1 id="_1" class="text-2xl mt-2 font-sans">拥有更强大的生产力</h1>
+<blockquote>
+<p class="font-serif my-1">庞业铭</p>
+</blockquote></div></div></div></section></section><section><section><div class="center middle"><div style="width:100%"><div><h1 id="nvimverilog" class="text-2xl mt-2 font-sans">如何用nvim开发Verilog</h1></div></div></div></section><section><div><h2 id="verilog-nvim" class="text-xl mt-2 pb-2 font-sans">Verilog nvim开发环境特性</h2>
+<ul class="list-disc font-serif">
+<li class="ml-8">模块间跳转  </li>
+</ul><div class="fragment" data-fragment-index="1"><ul class="list-disc font-serif">
+<li class="ml-8">语法异步检查   </li>
+</ul></div><div class="fragment" data-fragment-index="2"><ul class="list-disc font-serif">
+<li class="ml-8">代码对齐，使代码更加的整洁  </li>
+</ul></div><div class="fragment" data-fragment-index="3"><ul class="list-disc font-serif">
+<li class="ml-8">代码折叠  </li>
+</ul></div><div class="fragment" data-fragment-index="4"/></div></section><section><div><h3 id="_1">功能实现: 模块间跳转</h3>
+<p class="font-serif my-1"><img class="float-right" width="400" src="./static/img/9b0f239db5fb4655ba99ccf54294ce1a.png"/>
+<strong>实现原理</strong>: 通过<code>vtags</code>这款工具实现的  </p>
+<ul class="list-disc font-serif">
+<li class="ml-8">
+<p class="font-serif my-1"><a href="https://www.vim.org/scripts/script.php?script_id=5494">vtags下载链接</a>  </p>
+</li>
+<li class="ml-8">
+<p class="font-serif my-1"><a href="https://blog.csdn.net/baidu_32639021/article/details/102740151">安装教程</a>  </p>
+</li>
+</ul></div></section><section><div><h3 id="_1">功能实现: 语法异步检查</h3>
+<p class="font-serif my-1"><img class="float-right" width="500" src="./static/img/681b8236a68f4c78ae90818a4581bc76.png"/>
+<strong>实现原理</strong>: 通过nvim的插件<code>ale</code>实现   </p>
+<ul class="list-disc font-serif">
+<li class="ml-8"><a href="https://github.com/dense-analysis/ale">下载链接</a>  </li>
+</ul>
+<p class="font-serif my-1"><pr><br/>
+<pr>  </pr></pr></p><div class="fragment" data-fragment-index="1"><p class="font-serif my-1"><font color="green">效果展示如下</font>:<br/>
+<img alt="ale效果展示" src="./static/img/2fa3538d805c41ca91e7613564c5fbb1.png"/>
+<img alt="ale效果展示2" src="./static/img/e61e6e7b8fd842fe86755868ff5fb1b1.png"/></p></div></div></section><section><div><h3 id="_1">功能实现: 代码对齐</h3>
+<p class="font-serif my-1"><strong>实现原理</strong>: 通过nvim的插件<code>vim-lion</code>实现  </p>
+<blockquote>
+<p class="font-serif my-1">无需配置，安装即用</p>
+</blockquote>
+<p class="font-serif my-1"><strong>使用指南</strong>:  </p>
+<ul class="list-disc font-serif">
+<li class="ml-8"><code>gl+字符</code>，按字符，右对齐</li>
+<li class="ml-8"><code>gL+字符</code>，按字符，左对齐</li>
+</ul></div></section><section><div><h3 id="_1">功能实现: 代码折叠</h3>
+<p class="font-serif my-1"><strong>实现原理</strong>: <code>set foldmethod=indent</code>  </p>
+<p class="font-serif my-1"><img alt="vim自动命令组展示" src="./static/img/8a674132f62e4fe4ba653f03f4d200f8.png"/>  </p>
+<p class="font-serif my-1">看到这里，不知大家知不知道这一串代码的意义?接下来我为大家深度剖析一下其能带来的什么样作用.  </p></div></section><section><div><h4 id="_1">自动命令组</h4>
+<p class="font-serif my-1"><img alt="vim自动命令组展示" src="./static/img/a9a4e6132e5342a396f91feba51ea22e.png"/>  </p>
+<ul class="list-disc font-serif">
+<li class="ml-8">
+<p class="font-serif my-1">实现了<font color="green">代码折叠</font>,<font color="green">保存更新tags</font>  </p>
+</li>
+<li class="ml-8">
+<p class="font-serif my-1">当我们想用vim作为多种语言的开发工具时，总会遇到快捷键映射冲突的问题，而<font color="red"><u>自动命令组</u>可以很好的解决这个问题</font>  </p>
+<ul class="list-disc font-serif">
+<li class="ml-8">上面这串代码，实现了每次进入verilog文件,都会<u>重新加载</u>一次<code>verlog.vim</code>(即verilog相关的配置文件),用来<font color="red">覆盖掉相同功能的其他语言的映射</font>,这样我们就可以用<strong><font color="blue">gd</font></strong>这一快捷键<font color="green">实现c的跳转</font>和<font color="green">verilog的跳转</font>甚至更多语言  </li>
+</ul>
+</li>
+</ul></div></section></section><section><section><div class="center middle"><div style="width:100%"><div><h1 id="nvimmarkdown" class="text-2xl mt-2 font-sans">如何用nvim编写markdown?</h1></div></div></div></section><section><div><h2 id="markdown-nvim" class="text-xl mt-2 pb-2 font-sans">markdown nvim开发环境特性</h2>
+<ul class="list-disc font-serif">
+<li class="ml-8">实时预览  </li>
+</ul>
+<p class="font-serif my-1"><pr>  </pr></p>
+<ul class="list-disc font-serif">
+<li class="ml-8">快速插图  </li>
+</ul>
+<p class="font-serif my-1"><pr>  </pr></p>
+<ul class="list-disc font-serif">
+<li class="ml-8">快速改变文字颜色大小、加下划线等  </li>
+</ul>
+<p class="font-serif my-1"><pr>  </pr></p></div></section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">功能实现: 实时预览</h2></div></section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">功能实现: 快速插图</h2></div></section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">功能实现: 快速改变文字颜色、大小、加下划线等</h2></div></section></section>
+        </div>
+    </div>
+
+    <script src="./static/reveal/reveal.js"></script>
+
+    <script>
+        Reveal.initialize({
+
+            width: 1024, height: 768,
+
+            slideNumber: 'c/t',
+            controlsTutorial: false,
+            progress: false,
+            hash: true,
+            center: false,
+            autoAnimateUnmatched: true,
+            autoAnimateEasing: 'ease-out',
+            autoAnimateDuration: 0.3,
+            transitionSpeed: 'fast'
+        });
+    </script>
+</body>
+
+</html>

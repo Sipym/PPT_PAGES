@@ -63,16 +63,23 @@
 <p class="font-serif my-1">庞业铭</p>
 </blockquote></div></div></div></section></section><section><section><div class="center middle"><div style="width:100%"><div><h1 id="nvimverilog" class="text-2xl mt-2 font-sans">如何用nvim开发Verilog</h1></div></div></div></section><section><div><h2 id="verilog-nvim" class="text-xl mt-2 pb-2 font-sans">Verilog nvim开发环境特性</h2>
 <ul class="list-disc font-serif">
-<li class="ml-8">模块间跳转  </li>
-</ul><div class="fragment" data-fragment-index="1"><ul class="list-disc font-serif">
-<li class="ml-8">语法异步检查   </li>
-</ul></div><div class="fragment" data-fragment-index="2"><ul class="list-disc font-serif">
-<li class="ml-8">代码对齐，使代码更加的整洁  </li>
-</ul></div><div class="fragment" data-fragment-index="3"><ul class="list-disc font-serif">
-<li class="ml-8">代码折叠  </li>
-</ul></div><div class="fragment" data-fragment-index="4"/></div></section><section><div><h3 id="_1">功能实现: 模块间跳转</h3>
-<p class="font-serif my-1"><img class="float-right" width="400" src="./static/img/af440290d04746abb3d109fefb5af385.png"/>
-<strong>实现原理</strong>: 通过<code>vtags</code>这款工具实现的  </p>
+<li class="ml-8">
+<p class="font-serif my-1"><font color="darkgreen">模块间跳转</font>  </p>
+</li>
+<li class="ml-8">
+<p class="font-serif my-1"><font color="darkgreen">语法异步检查</font>   </p>
+</li>
+<li class="ml-8">
+<p class="font-serif my-1"><font color="darkgreen">代码对齐，使代码更加的整洁</font>  </p>
+</li>
+<li class="ml-8">
+<p class="font-serif my-1"><font color="darkgreen">代码折叠</font>  </p>
+</li>
+</ul></div></section><section><div><h2 id="verilog-nvim" class="text-xl mt-2 pb-2 font-sans">Verilog nvim开发环境特性</h2>
+<p class="font-serif my-1"><font color="darkgreen">功能实现: 模块间跳转</font><br/>
+<pr>  </pr></p>
+<p class="font-serif my-1"><img class="float-right" width="400" src="./static/img/1aedf13a56204c669d2996a17088a140.png"/>
+实现原理: 通过<code>vtags</code>这款工具实现的  </p>
 <ul class="list-disc font-serif">
 <li class="ml-8">
 <p class="font-serif my-1"><a href="https://www.vim.org/scripts/script.php?script_id=5494">vtags下载链接</a>  </p>
@@ -80,29 +87,55 @@
 <li class="ml-8">
 <p class="font-serif my-1"><a href="https://blog.csdn.net/baidu_32639021/article/details/102740151">安装教程</a>  </p>
 </li>
-</ul></div></section><section><div><h3 id="_1">功能实现: 语法异步检查</h3>
-<p class="font-serif my-1"><img class="float-right" width="500" src="./static/img/fdff301447e348eda7b734238771bf04.png"/>
-<strong>实现原理</strong>: 通过nvim的插件<code>ale</code>实现   </p>
+</ul></div></section><section><div><h2 id="verilog-nvim" class="text-xl mt-2 pb-2 font-sans">Verilog nvim开发环境特性</h2>
+<p class="font-serif my-1"><font color="darkgreen">功能实现: 语法异步检查</font><br/>
+<pr><br/>
+<img class="float-right" width="500" src="./static/img/35fe440f6d764ce8a123d6cc60526cf0.png"/>
+实现原理: 通过nvim的插件<code>ale</code>实现   </pr></p>
 <ul class="list-disc font-serif">
 <li class="ml-8"><a href="https://github.com/dense-analysis/ale">下载链接</a>  </li>
-</ul>
-<p class="font-serif my-1"><pr><br/>
-<pr>  </pr></pr></p><div class="fragment" data-fragment-index="1"><p class="font-serif my-1"><font color="green">效果展示如下</font>:<br/>
-<img alt="ale效果展示" src="./static/img/13d9c746bf2a4e76bfe1e465a405f5d6.png"/>
-<img alt="ale效果展示2" src="./static/img/81ec1976f8174ce0bd1a314e1d4940e7.png"/></p></div></div></section><section><div><h3 id="_1">功能实现: 代码对齐</h3>
-<p class="font-serif my-1"><strong>实现原理</strong>: 通过nvim的插件<code>vim-lion</code>实现  </p>
+</ul><div class="fragment" data-fragment-index="1"><p class="font-serif my-1"><pr><br/>
+<pr>  </pr></pr></p>
+<p class="font-serif my-1"><font color="green">效果展示如下</font>:<br/>
+<img alt="ale效果展示1" src="./static/img/f909dc4ee9eb4dbf99e3ef7298fcd3a9.png"/>
+<img alt="ale效果展示2" src="./static/img/8b00d53135154d9ebec49ec85630eab8.png"/></p></div></div></section><section><div><h2 id="verilog-nvim" class="text-xl mt-2 pb-2 font-sans">Verilog nvim开发环境特性</h2>
+<p class="font-serif my-1"><font color="darkgreen">功能实现: 代码对齐</font><br/>
+<pr><br/>
+实现原理: 通过nvim的插件<code>vim-lion</code>实现  </pr></p>
 <blockquote>
 <p class="font-serif my-1">无需配置，安装即用</p>
 </blockquote>
-<p class="font-serif my-1"><strong>使用指南</strong>:  </p>
+<p class="font-serif my-1">使用指南:  </p>
 <ul class="list-disc font-serif">
 <li class="ml-8"><code>gl+字符</code>，按字符，右对齐</li>
 <li class="ml-8"><code>gL+字符</code>，按字符，左对齐</li>
-</ul></div></section><section><div><h3 id="_1">功能实现: 代码折叠</h3>
-<p class="font-serif my-1"><strong>实现原理</strong>: <code>set foldmethod=indent</code>  </p>
-<p class="font-serif my-1"><img alt="vim自动命令组展示" src="./static/img/d812695314474eae954fa42ec0860110.png"/>  </p>
-<p class="font-serif my-1">看到这里，不知大家知不知道这一串代码的意义?接下来我为大家深度剖析一下其能带来的什么样作用.  </p></div></section><section><div><h4 id="_1">自动命令组</h4>
-<p class="font-serif my-1"><img alt="vim自动命令组展示" src="./static/img/1a16178795af45dd990f39cf34a6ddd5.png"/>  </p>
+</ul></div></section><section><div><h2 id="verilog-nvim" class="text-xl mt-2 pb-2 font-sans">Verilog nvim开发环境特性</h2>
+<p class="font-serif my-1"><font color="darkgreen">功能实现: 代码折叠</font><br/>
+<pr><br/>
+实现原理: <code>set foldmethod=indent</code>  </pr></p>
+<div class="codehilite"><pre class="bg-gray-100 overflow-x-auto rounded p-2 mb-2 mt-2"><span/><code>augroup AutoSourcevtags_vim_api
+<span class="c">  "" verilog使用缩进的方式折叠</span>
+  autocmd <span class="nb">BufEnter</span> *.<span class="k">v</span> <span class="k">set</span> <span class="nb">foldmethod</span><span class="p">=</span>indent 
+  <span class="k">au</span> <span class="nb">BufRead</span><span class="p">,</span><span class="nb">BufNewFile</span> *.vh <span class="k">set</span> <span class="k">filetype</span><span class="p">=</span>verilog
+  autocmd <span class="nb">BufEnter</span> *.<span class="k">v</span> source  <span class="p">~</span><span class="sr">/Software/</span>vtags<span class="m">-3</span>.<span class="m">11</span>/vtags_vim_api.<span class="k">vim</span>
+<span class="c">  "这是用于实现保存，更新</span>
+  autocmd <span class="nb">BufUnload</span> *.<span class="k">v</span> :<span class="p">!</span><span class="k">python3</span> <span class="sr">/home/</span>awjl<span class="sr">/Software/</span>vtags<span class="m">-3</span>.<span class="m">11</span>/vtags.<span class="k">py</span>
+augroup END
+</code></pre></div>
+
+<!--看到这里，不知大家知不知道这一串代码的意义?接下来我为大家深度剖析一下其能带来的什么样作用.  --></div></section><section><div><h4 id="_1">扩展知识点:自动命令组</h4>
+<div class="codehilite"><pre class="bg-gray-100 overflow-x-auto rounded p-2 mb-2 mt-2"><span/><code>augroup AutoSourcevtags_vim_api
+<span class="c">  "" verilog使用缩进的方式折叠</span>
+  autocmd <span class="nb">BufEnter</span> *.<span class="k">v</span> <span class="k">set</span> <span class="nb">foldmethod</span><span class="p">=</span>indent 
+  <span class="k">au</span> <span class="nb">BufRead</span><span class="p">,</span><span class="nb">BufNewFile</span> *.vh <span class="k">set</span> <span class="k">filetype</span><span class="p">=</span>verilog
+  autocmd <span class="nb">BufEnter</span> *.<span class="k">v</span> source  <span class="p">~</span><span class="sr">/Software/</span>vtags<span class="m">-3</span>.<span class="m">11</span>/vtags_vim_api.<span class="k">vim</span>
+<span class="c">  "这是用于实现保存，更新</span>
+  autocmd <span class="nb">BufUnload</span> *.<span class="k">v</span> :<span class="p">!</span><span class="k">python3</span> <span class="sr">/home/</span>awjl<span class="sr">/Software/</span>vtags<span class="m">-3</span>.<span class="m">11</span>/vtags.<span class="k">py</span>
+augroup END
+</code></pre></div>
+
+<!--![vim自动命令组展示](./static/img/468291d1c662467d8d98e47f0d13e295.png)  -->
+
 <ul class="list-disc font-serif">
 <li class="ml-8">
 <p class="font-serif my-1">实现了<font color="green">代码折叠</font>,<font color="green">保存更新tags</font>  </p>
@@ -115,29 +148,38 @@
 </li>
 </ul></div></section></section><section><section><div class="center middle"><div style="width:100%"><div><h1 id="nvimmarkdown" class="text-2xl mt-2 font-sans">如何用nvim编写markdown?</h1></div></div></div></section><section><div><h2 id="markdown-nvim" class="text-xl mt-2 pb-2 font-sans">markdown nvim开发环境特性</h2>
 <ul class="list-disc font-serif">
-<li class="ml-8">实时预览  </li>
+<li class="ml-8"><font color="darkgreen">实时预览</font>  </li>
 </ul>
 <p class="font-serif my-1"><pr>  </pr></p>
 <ul class="list-disc font-serif">
-<li class="ml-8">快速插图  </li>
+<li class="ml-8"><font color="darkgreen">快速插图</font>  </li>
 </ul>
 <p class="font-serif my-1"><pr>  </pr></p>
 <ul class="list-disc font-serif">
-<li class="ml-8">快速改变文字颜色大小、加下划线等  </li>
+<li class="ml-8"><font color="darkgreen">快速改变文字颜色大小、加下划线等</font>  </li>
 </ul>
-<p class="font-serif my-1"><pr>  </pr></p></div></section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">功能实现: 实时预览</h2>
-<p class="font-serif my-1"><img class="float-right" width="500" src="./static/img/f698eb202526472489460fe1642cf2bd.png"/>
-<strong>实现原理</strong>: 通过nvim插件<a href="https://github.com/neoclide/coc.nvim?tab=readme-ov-file">coc.nvim</a>中的<a href="https://github.com/weirongxu/coc-markdown-preview-enhanced">coc-markdown-preview-enhanced</a>实现    </p>
+<p class="font-serif my-1"><pr>  </pr></p></div></section><section><div><h2 id="markdown-nvim" class="text-xl mt-2 pb-2 font-sans">markdown nvim开发环境特性</h2>
+<p class="font-serif my-1"><font color="darkgreen">功能实现: 实时预览</font><br/>
+<pr><br/>
+<img class="float-right" width="500" src="./static/img/066749d00fb2457c9ddd065d11982f51.png"/>
+<strong>实现原理</strong>: 通过nvim插件<a href="https://github.com/neoclide/coc.nvim?tab=readme-ov-file">coc.nvim</a>中的<a href="https://github.com/weirongxu/coc-markdown-preview-enhanced">coc-markdown-preview-enhanced</a>实现    </pr></p>
 <p class="font-serif my-1"><pr><br/>
 <pr><br/>
+<strong>快捷键映射</strong>:  </pr></pr></p>
+<!--![markdown预览相关配置](./static/img/b259e051b9954cce817223f7bdbbe1d9.png)  -->
+
+<div class="codehilite"><pre class="bg-gray-100 overflow-x-auto rounded p-2 mb-2 mt-2"><span/><code><span class="c">" 预览界面&lt;esc&gt;用来toggle目录</span>
+map <span class="p">&lt;</span>C<span class="p">-</span>s<span class="p">&gt;</span> :CocCommand markdown<span class="p">-</span>preview<span class="p">-</span>enhanced.openPreview<span class="p">&lt;</span>CR<span class="p">&gt;</span>
+</code></pre></div></div></section><section><div><h2 id="markdown-nvim" class="text-xl mt-2 pb-2 font-sans">markdown nvim开发环境特性</h2>
+<p class="font-serif my-1"><font color="darkgreen">功能实现: 快速插图</font><br/>
 <pr><br/>
-<strong>快捷键映射</strong>:<br/>
-<img alt="markdown预览相关配置" src="./static/img/1b7a1e8c59374a4c9ae79546e2408d32.png"/>  </pr></pr></pr></p></div></section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">功能实现: 快速插图</h2>
-<p class="font-serif my-1"><strong>实现原理</strong>: 通过nvim插件<a href="https://github.com/MathSaber/mdtex-img-paste.vim">md-img-paste</a>实现  </p>
+<strong>实现原理</strong>: 通过nvim插件<a href="https://github.com/MathSaber/mdtex-img-paste.vim">md-img-paste</a>实现  </pr></p>
 <p class="font-serif my-1"><pr>  </pr></p>
 <p class="font-serif my-1"><strong>相关配置</strong>:<br/>
-<img alt="å¿«速插图配置" src="./static/img/088f92939df74745bc0eaa676ff98a1a.png"/></p></div></section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">功能实现: 快速改变文字颜色、大小、加下划线等</h2>
-<p class="font-serif my-1"><strong>实现原理</strong>: 通过nvim的特性<font color="purple">宏操作</font>实现  </p>
+<img alt="插图配置" src="./static/img/1dc83295e61f49858076d79e3c593740.png"/></p></div></section><section><div><h2 id="markdown-nvim" class="text-xl mt-2 pb-2 font-sans">markdown nvim开发环境特性</h2>
+<p class="font-serif my-1"><font color="darkgreen">功能实现: 快速改变文字颜色、大小、加下划线等</font><br/>
+<pr><br/>
+<strong>实现原理</strong>: 通过nvim的特性<font color="purple">宏操作</font>实现  </pr></p>
 <blockquote>
 <p class="font-serif my-1"><strong>宏操作</strong>: 指一种通过使用<font color="green">单一指令</font>或命令来<font color="green">执行一组预定义操作</font>的方式  </p>
 </blockquote>
@@ -151,10 +193,10 @@
 <p class="font-serif my-1"><strong>功能特性</strong>:<br/>
 - 多窗格,多窗口<br/>
 - <a href="https://sipym.github.io/notes/#/%E5%B7%A5%E5%85%B7/tmux/%E6%8F%92%E4%BB%B6">保存与恢复tmux环境</a>  </p>
-<p class="font-serif my-1"><img alt="tmux窗口布局展示" src="./static/img/7d26cad5d1f94fa3887d4633bad9d121.png"/></p></div></section><section><div><h3 id="tmux-">tmux-快捷键映射</h3>
+<p class="font-serif my-1"><img alt="tmux窗口布局展示" src="./static/img/8a2505c890f54371944bc7a806007209.png"/></p></div></section><section><div><h2 id="tmux-" class="text-xl mt-2 pb-2 font-sans">tmux-窗口管理器</h2>
 <p class="font-serif my-1"><strong>快捷键映射</strong>:<br/>
-<img alt="tmux快捷键映射" src="./static/img/3a70ea669a1e45a299aefba5265e464b.png"/>  </p></div></section><section><div><h2 id="ranger-" class="text-xl mt-2 pb-2 font-sans"><a href="https://github.com/ranger/ranger">ranger</a>-终端上的文件管理器</h2>
-<p class="font-serif my-1"><img class="float-right" width="400" src="./static/img/8d1c3e381885403d8f59490b6b867292.png"/><br/>
+<img alt="tmux快捷键映射" src="./static/img/81938d2f93e34b38a2b133b41d83ebfb.png"/>  </p></div></section><section><div><h2 id="ranger-" class="text-xl mt-2 pb-2 font-sans"><a href="https://github.com/ranger/ranger">ranger</a>-终端上的文件管理器</h2>
+<p class="font-serif my-1"><img class="float-right" width="400" src="./static/img/19d06b98fe8a439e85cac633d9256d23.png"/><br/>
 <strong>功能特性</strong>:  </p>
 <ul class="list-disc font-serif">
 <li class="ml-8">文件预览  </li>
@@ -162,7 +204,7 @@
 <li class="ml-8">创建书签: 能够快速跳转到书签所在路径  </li>
 <li class="ml-8"><font color="red">能带来直观的文件浏览体验</font>  </li>
 </ul></div></section><section><div><h2 id="goldendict-" class="text-xl mt-2 pb-2 font-sans"><a href="https://autoptr.top/categories/GoldenDict/?v=supold">goldendict</a>-翻译软件</h2>
-<p class="font-serif my-1"><img class="float-right" width="400" src="./static/img/bf96b02c083e42fd8e39e893104f2014.png"/></p>
+<p class="font-serif my-1"><img class="float-right" width="400" src="./static/img/9692b8ce27e641ebadd9b1e33f10220f.png"/></p>
 <p class="font-serif my-1"><strong>功能特性</strong>:  </p>
 <ul class="list-disc font-serif">
 <li class="ml-8"><font color="green">划词(句)</font>翻译</li>
